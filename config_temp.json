@@ -1,0 +1,63 @@
+{
+    "host": "localhost",
+    "port": 3000,
+    "tron_api_keys": [
+        "f828c0b0-c494-4f3e-bd03-cec13735cf93",
+        "54726f19-3ada-4f9f-9695-3c0de9adf9e6",
+        "c471da65-b63e-42be-b876-8ec9f64321b3"
+    ],
+    "addresses": [
+        {
+            "address": "TAYCUNzLFSL95ABVroofZLY6wfcuwRTdsb",
+            "private_key": "a788a3f43fa400fb2e30f5e645475794033b75ffb32f4e47c56d9cf4a00d7e32",
+            "receiving_address": "TM5Lnv7jj6ELCHMPtiJbGTYGQRG8QU4EKB"
+        }
+    ],
+    "tron": {
+        "full_host": "https://api.trongrid.io",
+        "min_balance": 2,
+        "transfer_retry_times": 3,
+        "transfer_retry_delay": 2000,
+        "gas_limit": 1000,
+        "gas_price": 1,
+        "energy_limit": 1000,
+        "energy_price": 1,
+        "network_fee": {
+            "update_interval": 300000,
+            "default_energy_price": 1,
+            "default_bandwidth_price": 1
+        },
+        "account": {
+            "activation_fee": 0.1,
+            "min_balance_for_activation": 0.2
+        }
+    },
+    "monitor": {
+        "check_interval": 5000,
+        "api_key_rotate_interval": 300000,
+        "request_timeout": 5000
+    },
+    "logging": {
+        "level": "info",
+        "max_file_size": 5242880,
+        "max_files": 5,
+        "log_dir": "logs"
+    },
+    "transfer_records": {
+        "file_path": "transfer_records.json"
+    },
+    "websocket": {
+        "port": 3001,
+        "host": "localhost",
+        "heartbeat_interval": 10000,
+        "check_interval": 30000,
+        "max_retries": 3,
+        "retry_delay": 5000
+    },
+    "multi_sign": {
+        "owner_address": "TAYCUNzLFSL95ABVroofZLY6wfcuwRTdsb",
+        "owner_private_key": "a788a3f43fa400fb2e30f5e645475794033b75ffb32f4e47c56d9cf4a00d7e32",
+        "signer_address": "TM5Lnv7jj6ELCHMPtiJbGTYGQRG8QU4EKB",
+        "signer_private_key": "3d1bfd5ad3165c11fae2fe910a919ae6f31a635a3b1fefeea862b4b4775b3971"
+    }
+}
